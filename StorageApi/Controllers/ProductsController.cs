@@ -23,6 +23,7 @@ namespace StorageApi.Controllers
         }
 
         // GET: api/Products
+        //api/products?categoryName={ordet man skriver in}
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetProduct(string? categoryName)
         {
